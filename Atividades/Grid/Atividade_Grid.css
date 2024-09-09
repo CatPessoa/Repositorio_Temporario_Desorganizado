@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 1.25em;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer"    
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.header{
+    grid-area:header;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 1.25em;
+    text-align: center;
+    position: relative;
+}
+/* barra vermelha esquisita */
+.header h1::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: crimson;
+    margin: 10px auto 0 auto;
+}
+
+.navbar{
+    margin-top: 1.25em ;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+}
+.menu li{
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    display: block;
+    background-color: #555;
+    border-radius:5px ;
+    transition: background-color 0.3s;
+}
+.menu a:hover{
+    background-color: #777;
+}
+/* A PORRA DE UM LASER */
+.menu li::after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.menu li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 1.25em;
+}
+
+.content{
+    grid-area: content;
+    grid-template-areas: 
+        "section1"
+        "section2"
+        "section3"
+        ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.25em;
+}
+.section{
+    background-color: #f9f9f9;
+    padding: 1.25em;
+    border: 1px solid #ddd;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 1.25em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:48em) {
+    container{
+        grid-template-areas: 
+            "header"
+            "content"
+            "sidebar"
+            "footer"
+        ;
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+}
+    
+.content{
+    grid-template-areas: 
+        "section1"
+        "section2"
+        "section3"
+    ;
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    text-align: center;
+    padding: 0.625px 0;
+}
+header h1{
+    margin: 0;
+}
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+.card{
+    background-color: black;
+    color: white;
+    width: 20.3125em;
+    border-radius: 0.3125em;
+    box-shadow: 0 2px 5px snow;
+    padding: 1.5625em;
+}
+
+@media screen and(max-width: 768px) {
+    .card{
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+@media screen and(max-width: 480px) {
+    .card{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

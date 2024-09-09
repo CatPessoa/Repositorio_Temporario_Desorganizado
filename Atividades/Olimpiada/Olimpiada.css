@@ -1,0 +1,43 @@
+body{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 60en;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #013c58;
+}
+
+ul.uwu_topnav{
+    display: flex;
+    list-style:none;
+    font-size: 18px;
+    gap: 1em;
+}
+ul.uwu_topnav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+ul.uwu_topnav li a:hover{
+    text-decoration: underline;
+}
+.mascote{
+    width: 100px;
+    margin-left: 20.5em;
+}
+h1{
+    margin: 0em;
+    text-align: center;
+    font-size: 82px;
+    color: #013c58;
+    text-shadow: 2px 2px #000000;
+}

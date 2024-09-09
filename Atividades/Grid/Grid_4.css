@@ -1,0 +1,43 @@
+/* THE BASEMENT NEWS ATIVIDADE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h1{
+    font-weight:bold ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    height: auto;
+}
+.grid{
+    grid-template-areas: 
+        "aside01 content aside02"
+        "footer footer footer"
+
+    ;
+}
+.aside01{
+    grid-area: aside01;
+}
+
+.content{
+    grid-area: content;
+}
+
+.aside02{
+    grid-area: aside02;
+}
+
+footer{
+    grid-area: footer;
+}

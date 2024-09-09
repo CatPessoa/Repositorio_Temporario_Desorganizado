@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    padding: 1.25em;
+}
+header{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+}
+header h1{
+    margin: 0;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.625em;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25em;
+    justify-content: center;
+    box-shadow: 0 2px 5px gray;
+    margin-top: 1.25em;
+    max-width: 30%;
+    min-width: 15.625em;
+}
+.card_container{
+    padding: 1.25em;
+    border-radius: 0.5em;
+    flex: 1 1 30%;
+}
+
+@media screen and(max-width: 768px) {
+        .card{
+            flex: 1 1 45%;
+            max-width: 45%;
+        }
+}
+@media screen and(max-width: 480px) {
+        .card{
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+}

@@ -1,0 +1,41 @@
+/* The sidebar menu */
+.Inicio{
+    font-size:100px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #013c58;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    background-color: #0b1e33;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px;
+    text-align: center;
+    font-size: 40px;
+  }
+section{
+    margin-left:160px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: grey;
+    padding: 20px;
+}
+caption{
+    font-size: xx-large;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}
+table{
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 2px 5px black;
+    border-collapse: collapse;
+}
+th{
+    background-color: crimson;
+    font-weight: bold;
+    padding: 10px;
+}
+tr{
+    background-color: white;
+}
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+tbody tr:hover{
+    background-color: black;
+    color: white;
+}

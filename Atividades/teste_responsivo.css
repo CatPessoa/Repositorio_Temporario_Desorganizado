@@ -1,0 +1,17 @@
+.only{
+    color: black;
+    font-family: serif;
+}
+a::after{
+    content: "("attr ( href)" - "("attr ( title );
+    display: inline-block;
+    margin-left: .5em;
+}
+
+@media print{
+    body{
+        color: black;
+        background-color: aqua;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

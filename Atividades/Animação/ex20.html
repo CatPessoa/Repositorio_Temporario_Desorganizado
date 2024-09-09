@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .cena{
+            border: 2px solid #ccc;
+            justify-content: center;
+            align-content: center;
+            height: 100px;
+        }
+        .plano{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 100%;
+            background-color: crimson;
+            color: whitesmoke;
+            font-size: 2em;
+        }
+
+            #cena{
+                perspective: 400px;
+            }
+
+            #cena .plano{
+                width: 200px;
+                margin: 50px;
+                /* aspect-ratio: ; */
+                -ms-transform-origin-y: 80em;
+            }
+    </style>
+</head>
+<body>
+    <div class="cena" id="cena01">
+        <div class="plano">PLANO</div>
+    </div>
+</body>
+</html>

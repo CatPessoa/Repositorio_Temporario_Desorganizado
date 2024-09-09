@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_bar{
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.nav_bar_logo{
+    color: white;
+    margin-left: 20px;
+}
+.nav_lista{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    width: 20%;
+    list-style-type: none;
+}
+.nav_lista li a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    width: 80%;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.card_container{
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    background-color: #6ba5b9;
+    color: white;
+    font-weight: bold;
+}
+
+.sidenav01{
+    width: 140px;
+    background: yellow;
+    height: 300px;
+    padding: 60px;
+  }
+
+footer{
+    background-color: green;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}

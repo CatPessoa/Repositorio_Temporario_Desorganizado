@@ -1,0 +1,175 @@
+h1{
+    color: whitesmoke;
+    background-color: crimson;
+}
+h2{
+    text-align: center;
+}
+.Grid_container{
+    background-color: wheat;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 10px;
+    max-width: 400px;
+
+    display: grid;
+    gap: 10px;
+}
+.Item{
+    background-color: tomato;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* ############################################################################################################################ */
+/* Demonstração das propiedades de grid columns */
+
+.grid_columns_Examples{
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns:minmax(200px , 1fr) 1fr 1fr; */
+    /* grid-template-columns: repeat(auto-fit, 100px); */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, auto)); */
+    grid-template-columns: repeat(3, 1fr);
+}   
+/* ############################################################################################################################ */
+
+.grid_Template_rows_Examples{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:100px;
+}
+.grid_Template_rows_Examples .Item{
+    color: whitesmoke;
+    background-color: dodgerblue;
+}
+
+/* Junção de grid template columne row */
+.grid_Template_rc{
+    grid-template-columns:100px auto 50px ;
+    grid-template-rows: 50px 200px 50px;
+}
+.grid_Template_rc .Item{
+    background-color: aquamarine;
+}
+
+/* ############################################################################################################################ */
+/* Explicação sobre Grid template Area */
+
+.grid_Template_area-1{
+    grid-template-columns: 2fr 1fr 100px;
+    grid-template-rows: 50px 150px 50px;
+    grid-template-areas:
+        "logo nav nav"
+        "sidenav content advert"
+        "sidenav footer footer"
+    ;
+}
+.logo{
+    grid-area: logo;
+}
+.nav{
+    grid-area: nav;
+}
+.content{
+    grid-area: content;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.advert{
+    grid-area: advert;
+}
+.footer{
+    grid-area: footer;
+}
+.grid_Template_area-1 .Item {
+    background-color: darkorchid;
+    color: whitesmoke;
+}
+
+@media (max-width:500px){
+    .grid_Template_area-1{
+        grid-template-areas:
+            "logo logo logo"
+            "sidenav sidenav sidenav"
+            "content content content"
+            "advert footer footer"
+        ;
+    }   
+}
+/* ############################################################################################################################ */
+/* Explicação sobre Grid template Area */
+
+.grid_Template{
+    grid-template:
+    /* voce pode colocar  os valores a lado das palavras */
+        "logo nav nav" 100px
+        "sidenav content advert" 50px 
+        "sidenav footer footer"  50px
+        /100px 100px 1fr 
+    ;
+}
+.grid_Template .Item{
+    background-color: forestgreen;
+    color: whitesmoke;
+}
+/* Usar medida "em" */
+.gap{
+    gap: 30px;
+    /* column-gap: 50px;
+    row-gap: 5px; */
+}
+.gap .Item{
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+/* ################################################################################################################################ */
+
+.grid-1{
+    grid: 100px 100px 20px / 1fr 1fr ;
+    grid:
+            "logo logo nav" 80px
+            "content content advert" 150px
+            "sidenav footer footer" 30px
+            / 100px 2fr 1fr
+    ;
+}
+.grid-1 .Item{
+    background-color: violet;
+}
+
+/* ################################################################################################################################ */
+
+.Grid-example{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+
+    justify-content: end;
+}
+
+.Grid-example .Item{
+    background-color: darkmagenta;
+    color: whitesmoke;
+}
+
+/* ################################################################################################################################ */
+
+.Grid-item{
+    font-size: 1.2em;
+    font-weight: bold;
+
+    grid-template-columns:
+    [inicio]1fr 1fr
+    [final];
+
+    grid-auto-rows: 50px;
+}
+
+.Grid-item .Item_5{
+    grid-column: inicio / 3;
+}
+
+.Grid-item .Item{
+    background-color: skyblue;
+}

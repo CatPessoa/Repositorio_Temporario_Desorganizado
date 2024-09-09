@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color:	#013c58;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 36px;
+    margin-left: 26px;
+    letter-spacing: 2px;
+}
+ul.topnav{
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+ul.topnav li a {
+    border-radius: 15px;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+ul.topnav li a:hover{
+    background-color: #d4af37;
+    color: black;
+}
+input + li{
+    background-color: #d4af37;
+}
